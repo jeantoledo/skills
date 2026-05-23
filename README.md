@@ -20,8 +20,14 @@ npx skills add jeantoledo/skills
 `skills.sh` auto-detects which agents you have installed and offers to install each skill to the appropriate location. Useful flags:
 
 ```bash
+# List all available skills
+npx skills add jeantoledo/skills --list
+
+# Install one or more specific skill
+npx skills add jeantoledo/skills --skill html-artifact
+
 # Install to a specific agent only
-npx skills add jeantoledo/skills -a cursor -y
+npx skills add jeantoledo/skills -a claude-code -y
 
 # Install globally (available in every project, not just the current workspace)
 npx skills add jeantoledo/skills -g
